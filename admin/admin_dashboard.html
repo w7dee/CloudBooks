@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admin</title>
+    </head>
+    <body>
+        
+<nav class="main-nav">
+    <div class="nav-container">
+        <div class="logo">
+            <a href="index.html">Cloud<span>Books</span></a>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="request-book.html">Request Book</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+
+        <div class="nav-auth">
+            <a href="login.html" class="btn-login">Login</a>
+        </div>
+    </div>
+</nav> 
+<h1>Welcome our, Admin</h1>
+<main class="admin-content">
+    <section class="add-book-section">
+        <h3>Add New Book to CloudBooks</h3>
+        <form class="admin-form">
+            <div class="input-group">
+                <label for="book-name">Book Name:</label>
+                <input type="text" id="book-name" name="book_name" placeholder="Enter book title" required>
+            </div>
+
+            <div class="input-group">
+                <label for="book-description">Book Description:</label>
+                <textarea id="book-description" name="book_desc" placeholder="Write a brief summary..." rows="4"></textarea>
+            </div>
+
+            <div class="input-group">
+                <label for="book-author">Book Author:</label>
+                <input type="text" id="book-author" name="book_author" placeholder="Author name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="book-price">Book Price ($):</label>
+                <input type="number" id="book-price" name="book_price" step="0.01" placeholder="0.00" required>
+            </div>
+            <div class="input-group">
+                <label for="book-cover">Book Cover Image:</label>
+                <input type="file" id="book-cover" name="book_cover" accept="image/*" required>
+                <small style="color: #666;">Suggested size: 300x450 pixels (JPG/PNG)</small>
+            </div>
+            <button type="submit" class="btn-admin">Add Book to Library</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <section class="manage-books-section">
+        <h3>Manage Existing Books</h3>
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Book Name</th>
+                    <th>Author</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>C# Programming</td>
+                    <td>Buff</td>
+                    <td>15.00 LE</td>
+                    <td>
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </td>
+                </tr>
+                </tbody>
+        </table>
+    </section>
+</main>
+
+</body>
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-section about">
+            <h3>CloudBooks</h3>
+            <p>مكتبتكم ، مكتبتنا </p>
+        </div>
+
+        <div class="footer-section links">
+            <h4>روابط سريعة</h4>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="login.html">تسجيل الدخول</a></li>
+                <li><a href="register.html">انشاء حساب جديد</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+
+
+            </ul>
+        </div>
+
+        <div class="footer-section contact">
+            <h4>تواصل معنا</h4>
+            <p>البريد: w7dee1281@gmail.com</p>
+            <p>الهاتف:+201007749257</p>
+             <p>العنوان: الاقصر،كليه حاسبات ومعلومات </p>
+
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 جميع الحقوق محفوظة CloudBooks</p>
+    </div>
+</footer>
+</html>
