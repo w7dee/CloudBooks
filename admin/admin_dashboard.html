@@ -3,32 +3,14 @@
 <html>
     <head>
         <title>Admin</title>
+        <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
     </head>
     <body>
-        
-<nav class="main-nav">
-    <div class="nav-container">
-        <div class="logo">
-            <a href="index.html">Cloud<span>Books</span></a>
-        </div>
-
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="books.html">Books</a></li>
-            <li><a href="request-book.html">Request Book</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="support.html">Support</a></li>
-        </ul>
-
-        <div class="nav-auth">
-            <a href="login.html" class="btn-login">Login</a>
-        </div>
-    </div>
-</nav> 
-<h1>Welcome our, Admin</h1>
+<h1 style="text-align: center;">Welcome our, Admin</h1>
 <main class="admin-content">
     <section class="add-book-section">
-        <h3>Add New Book to CloudBooks</h3>
+        <h3 style="text-align: center;">Add New Book to CloudBooks</h3>
         <form class="admin-form">
             <div class="input-group">
                 <label for="book-name">Book Name:</label>
@@ -46,9 +28,15 @@
             </div>
 
             <div class="input-group">
-                <label for="book-price">Book Price ($):</label>
-                <input type="number" id="book-price" name="book_price" step="0.01" placeholder="0.00" required>
+                <label for="book-Section">Section:</label>
+                <select id="book-Section" name="book_Section" required>
+                    <option value="Novels">Novels</option>
+                    <option value="Scientific Books">Scientific Books</option>
+                    <option value="Personal Development">Personal Development</option>
+                    <option value="History">History</option>
+                </select>
             </div>
+ 
             <div class="input-group">
                 <label for="book-cover">Book Cover Image:</label>
                 <input type="file" id="book-cover" name="book_cover" accept="image/*" required>
@@ -68,16 +56,121 @@
                     <th>ID</th>
                     <th>Book Name</th>
                     <th>Author</th>
-                    <th>Price</th>
+                    <th>Section</th>
                     <th>Action</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td>C# Programming</td>
-                    <td>Buff</td>
-                    <td>15.00 LE</td>
+                    <td>Enduring Love</td>
+                    <td>Ian McEwan</td>
+                    <td>Novels</td>
+                    <td>
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </td>
+                </tr>
+                </tbody>
+                 <tbody>
+                <tr>
+                    <td>2</td>
+                    <td>The Ruins</td>
+                    <td>Scott Smith</td>
+                    <td>Novels</td>
+                    <td>
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </td>
+                </tr>
+                </tbody>
+                 <tbody>
+                <tr>
+                    <td>3</td>
+                    <td>The Dreadfuls</td>
+                    <td>A. Rae Dunlap</td>
+                    <td>Novels</td>
+                    <td>
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </td>
+                </tr>
+                </tbody>
+                 <tbody>
+                <tr>
+                    <td>4</td>
+                    <td>Heart of Darkness</td>
+                    <td>Joseph Conrad</td>
+                    <td>Novels</td>
+                    <td>
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </td>
+                </tr>
+                </tbody>
+                 <tbody>
+                                <tr>
+                    <td>5</td>
+                    <td>Fundamentals of Physics</td>
+                    <td>Jearl Walker</td>
+                    <td>Scientific Books</td>
+                    <td>
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </td>
+                </tr>
+                </tbody>
+                 <tbody>
+                 <tr>
+                    <td>6</td>
+                    <td>Organic Chemistry Guide to Molecules</td>
+                    <td>Mateusz Wozny</td>
+                    <td>Scientific Books</td>
+                    <td>
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </td>
+                </tr>
+                </tbody>
+                <tbody>
+                <tr>
+                    <td>7</td>
+                    <td>Atomic Habits</td>
+                    <td>James Clear</td>
+                    <td>Self Development</td>
+                    <td>
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </td>
+                </tr>
+                </tbody>
+                                <tr>
+                    <td>8</td>
+                    <td>Pharaohs of Ancient Egypt</td>
+                    <td>Billy Wellman</td>
+                    <td>History</td>
+                    <td>
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </td>
+                </tr>
+                </tbody>
+                                <tr>
+                    <td>9</td>
+                    <td>History of Greece</td>
+                    <td>Billy Wellman</td>
+                    <td>History</td>
+                    <td>
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </td>
+                </tr>
+                </tbody>
+                                <tr>
+                    <td>10</td>
+                    <td>History of Iran</td>
+                    <td>Billy Wellman</td>
+                    <td>History</td>
                     <td>
                         <button class="btn-edit">Edit</button>
                         <button class="btn-delete">Delete</button>
@@ -93,33 +186,31 @@
     <div class="footer-container">
         <div class="footer-section about">
             <h3>CloudBooks</h3>
-            <p>مكتبتكم ، مكتبتنا </p>
+            <p>Your library, our library.</p>
         </div>
 
         <div class="footer-section links">
-            <h4>روابط سريعة</h4>
+            <h4>Quick Links</h4>
             <ul>
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="login.html">تسجيل الدخول</a></li>
-                <li><a href="register.html">انشاء حساب جديد</a></li>
-                <li><a href="terms.html">Terms of Service</a></li>
-                <li><a href="privacy.html">Privacy Policy</a></li>
-
-
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../login.html">Login</a></li>
+                <li><a href="../register.html">Sign Up</a></li>
+                <li><a href="../pricing.html">Pricing</a></li>
+                <li><a href="../terms.html">Terms of Service</a></li>
+                <li><a href="../privacy.html">Privacy Policy</a></li>
             </ul>
         </div>
 
         <div class="footer-section contact">
-            <h4>تواصل معنا</h4>
-            <p>البريد: w7dee1281@gmail.com</p>
-            <p>الهاتف:+201007749257</p>
-             <p>العنوان: الاقصر،كليه حاسبات ومعلومات </p>
-
+            <h4>Contact Us</h4>
+            <p>Email: w7dee1281@gmail.com</p>
+            <p>Phone: +201007749257</p>
+            <p>Address: Luxor, Faculty of Computers and Information</p>
         </div>
     </div>
 
     <div class="footer-bottom">
-        <p>&copy; 2026 جميع الحقوق محفوظة CloudBooks</p>
+        <p>&copy; 2026 All Rights Reserved - CloudBooks</p>
     </div>
 </footer>
 </html>

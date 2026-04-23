@@ -1,10 +1,13 @@
 <!DOCTYPE html>
+<html>
 <head>
-    <title>Password Recovery - CloudBooks</title>
-    <link rel="stylesheet" href="style.css">
+<title>Pricing - CloudBooks</title>
+<link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="utf-8">
+</head>
 <body>
-<nav class="main-nav">
+        <nav class="main-nav">
     <div class="nav-container">
         <div class="logo">
             <a href="index.html"><img src="logo.png" alt="CloudBooks Logo" class="nav-logo">Cloud<span>Books</span></a>
@@ -24,27 +27,30 @@
         </div>
     </div>
 </nav>
-    <div class="password-forget">
-        <h2 style="text-align: center;">Forgot Password?</h2>
-        <p class="description" style="text-align: center;">Enter your registered email and we will send you a link to regain access to your account.</p>
-        
-        <form>
-            <div class="forgpassword-email">
-                <label for="email-forget">Email: </label>
-                <input type="email" id="email-forget" name="email-forget" placeholder="example@domain.com" required>
-            </div>
-        <div class="extra-links">
-            <a href="login.html">Back to Login</a> 
-        </div>
-            <button type="submit" class="btn-forget">Send Link</button>
-        </form>
 
-
+<div class="container">
+    <div class="pricing-header">
+        <h1>Simple, Transparent Pricing</h1>
+        <p>Choose the plan that's right for you. Get lifetime access to our entire library with a single payment.</p>
     </div>
 
-</body>
+    <div class="pricing-card">
+        <h3>Premium Plan</h3>
+        <div class="price">$49.99</div>
+        <p class="price-desc">One-Time Payment</p>
+        
+        <ul class="pricing-features">
+            <li>Unlimited access to all books</li>
+            <li>New books added every week</li>
+            <li>Download books for offline reading</li>
+            <li>Priority customer support</li>
+            <li>No ads, ever</li>
+        </ul>
+        
+        <a href="register.html" class="btn-pricing">Get Started Now</a>
+    </div>
+</div>
 
-    
 <footer class="main-footer">
     <div class="footer-container">
         <div class="footer-section about">
@@ -76,4 +82,5 @@
         <p>&copy; 2026 All Rights Reserved - CloudBooks</p>
     </div>
 </footer>
+</body>
 </html>

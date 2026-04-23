@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Request a Book CloudBooks</title>
+<link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="main-nav">
+    <div class="nav-container">
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="CloudBooks Logo" class="nav-logo">Cloud<span>Books</span></a>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="request-book.html">Request Book</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+
+        <div class="nav-auth">
+            <a href="login.html" class="btn-login">Login</a>
+        </div>
+    </div>
+</nav>
+<main style="padding: 20px; max-width: 800px; margin: auto;">
+        <h1 style="text-align: center;"> Request a New Book</h1>
+        <p>If you can't find the book you're looking for, please fill out the form below:</p>
+
+        <form id="requestForm">
+            <label for="bookName">Book Title:</label><br>
+            <input type="text" id="bookName" name="bookName" placeholder="Enter book name" required><br><br>
+
+            <label for="author">Author Name (Optional):</label><br>
+            <input type="text" id="author" name="author" placeholder="Enter author name"><br><br>
+
+            <label for="details">Additional Details:</label><br>
+            <textarea id="details" name="details" placeholder="Tell us more about the book..." rows="5" style="width: 100%;"></textarea><br><br>
+
+            <button type="submit" class="btn-primary">Send Request</button>
+        </form>
+    </main>
+</body>
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-section about">
+            <h3>CloudBooks</h3>
+            <p>Your library, our library.</p>
+        </div>
+
+        <div class="footer-section links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Sign Up</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section contact">
+            <h4>Contact Us</h4>
+            <p>Email: w7dee1281@gmail.com</p>
+            <p>Phone: +201007749257</p>
+            <p>Address: Luxor, Faculty of Computers and Information</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 All Rights Reserved - CloudBooks</p>
+    </div>
+</footer>
+</html>
