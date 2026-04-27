@@ -25,11 +25,10 @@
         </ul>
 
         <div class="nav-auth">
-            <a href="login.html" class="btn-login">Login</a>
         </div>
     </div>
 </nav>
-    <header>
+    <header class="header-with-bg books-header">
         <h1>Books Library</h1>
     </header>
 
@@ -37,8 +36,8 @@
         <input type="text" id="searchInput" placeholder="Search for a book...">
     </div>
 
-    <div class="container" id="booksList">
-
+    <div class="container">
+        <div id="booksList">
         <div class="section">
             <h2>Novels</h2>
             <div class="books">
@@ -112,11 +111,10 @@
                 </div>
             </div>
         </div>
-
+        </div>
+        <div id="accessDeniedContainer" style="display: none;"></div>
     </div>
 
-    <script src="script.js"></script>
-</body>
 <footer class="main-footer">
     <div class="footer-container">
         <div class="footer-section about">
@@ -148,4 +146,6 @@
         <p>&copy; 2026 All Rights Reserved - CloudBooks</p>
     </div>
 </footer>
+<script src="script.js" defer></script>
+</body>
 </html>

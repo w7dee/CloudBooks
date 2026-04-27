@@ -7,10 +7,27 @@
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
     </head>
     <body>
-<h1 style="text-align: center;">Welcome our, Admin</h1>
-<main class="admin-content">
+<nav class="main-nav">
+    <div class="nav-container">
+        <div class="logo">
+            <a href="../index.html"><img src="../logo.png" alt="CloudBooks Logo" class="nav-logo">Cloud<span>Books</span></a>
+        </div>
+        <div class="nav-links">
+            <a href="admin_dashboard.html">Dashboard</a>
+            <a href="users.html">Users</a>
+        </div>
+        <div class="nav-auth">
+        </div>
+    </div>
+</nav>
+
+<header>
+    <h1>Admin Dashboard</h1>
+</header>
+
+<main class="container">
     <section class="add-book-section">
-        <h3 style="text-align: center;">Add New Book to CloudBooks</h3>
+        <h2>Add New Book</h2>
         <form class="admin-form">
             <div class="input-group">
                 <label for="book-name">Book Name:</label>
@@ -48,8 +65,8 @@
 
     <hr>
 
-    <section class="manage-books-section">
-        <h3>Manage Existing Books</h3>
+    <section class="section">
+        <h2>Manage Existing Books</h2>
         <table class="admin-table">
             <thead>
                 <tr>
@@ -61,127 +78,11 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Enduring Love</td>
-                    <td>Ian McEwan</td>
-                    <td>Novels</td>
-                    <td>
-                        <button class="btn-edit">Edit</button>
-                        <button class="btn-delete">Delete</button>
-                    </td>
-                </tr>
-                </tbody>
-                 <tbody>
-                <tr>
-                    <td>2</td>
-                    <td>The Ruins</td>
-                    <td>Scott Smith</td>
-                    <td>Novels</td>
-                    <td>
-                        <button class="btn-edit">Edit</button>
-                        <button class="btn-delete">Delete</button>
-                    </td>
-                </tr>
-                </tbody>
-                 <tbody>
-                <tr>
-                    <td>3</td>
-                    <td>The Dreadfuls</td>
-                    <td>A. Rae Dunlap</td>
-                    <td>Novels</td>
-                    <td>
-                        <button class="btn-edit">Edit</button>
-                        <button class="btn-delete">Delete</button>
-                    </td>
-                </tr>
-                </tbody>
-                 <tbody>
-                <tr>
-                    <td>4</td>
-                    <td>Heart of Darkness</td>
-                    <td>Joseph Conrad</td>
-                    <td>Novels</td>
-                    <td>
-                        <button class="btn-edit">Edit</button>
-                        <button class="btn-delete">Delete</button>
-                    </td>
-                </tr>
-                </tbody>
-                 <tbody>
-                                <tr>
-                    <td>5</td>
-                    <td>Fundamentals of Physics</td>
-                    <td>Jearl Walker</td>
-                    <td>Scientific Books</td>
-                    <td>
-                        <button class="btn-edit">Edit</button>
-                        <button class="btn-delete">Delete</button>
-                    </td>
-                </tr>
-                </tbody>
-                 <tbody>
-                 <tr>
-                    <td>6</td>
-                    <td>Organic Chemistry Guide to Molecules</td>
-                    <td>Mateusz Wozny</td>
-                    <td>Scientific Books</td>
-                    <td>
-                        <button class="btn-edit">Edit</button>
-                        <button class="btn-delete">Delete</button>
-                    </td>
-                </tr>
-                </tbody>
-                <tbody>
-                <tr>
-                    <td>7</td>
-                    <td>Atomic Habits</td>
-                    <td>James Clear</td>
-                    <td>Self Development</td>
-                    <td>
-                        <button class="btn-edit">Edit</button>
-                        <button class="btn-delete">Delete</button>
-                    </td>
-                </tr>
-                </tbody>
-                                <tr>
-                    <td>8</td>
-                    <td>Pharaohs of Ancient Egypt</td>
-                    <td>Billy Wellman</td>
-                    <td>History</td>
-                    <td>
-                        <button class="btn-edit">Edit</button>
-                        <button class="btn-delete">Delete</button>
-                    </td>
-                </tr>
-                </tbody>
-                                <tr>
-                    <td>9</td>
-                    <td>History of Greece</td>
-                    <td>Billy Wellman</td>
-                    <td>History</td>
-                    <td>
-                        <button class="btn-edit">Edit</button>
-                        <button class="btn-delete">Delete</button>
-                    </td>
-                </tr>
-                </tbody>
-                                <tr>
-                    <td>10</td>
-                    <td>History of Iran</td>
-                    <td>Billy Wellman</td>
-                    <td>History</td>
-                    <td>
-                        <button class="btn-edit">Edit</button>
-                        <button class="btn-delete">Delete</button>
-                    </td>
-                </tr>
-                </tbody>
+            </tbody>
         </table>
     </section>
 </main>
 
-</body>
 <footer class="main-footer">
     <div class="footer-container">
         <div class="footer-section about">
@@ -213,4 +114,6 @@
         <p>&copy; 2026 All Rights Reserved - CloudBooks</p>
     </div>
 </footer>
+<script src="../script.js" defer></script>
+</body>
 </html>

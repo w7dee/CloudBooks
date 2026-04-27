@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - CloudBooks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" alt="CloudBooks Logo" class="nav-logo">Cloud<span>Books</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="request-book.html">Request Book</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+            <div class="nav-auth">
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Complete Your Purchase</h1>
+    </header>
+
+    <main class="container">
+        <form id="checkoutForm" style="max-width: 600px; margin: 40px auto;">
+            <div class="pricing-card" style="border-top: none; padding: 20px; margin-bottom: 30px; text-align: left;">
+                <h3>Premium Plan</h3>
+                <div class="price" style="font-size: 32px; margin-bottom: 20px;">$49.99 <span style="font-size: 16px; color: var(--text-secondary); font-weight: 400;">One-Time Payment</span></div>
+                <ul class="pricing-features">
+                    <li>Unlimited access to all books</li>
+                    <li>New books added every week</li>
+                    <li>Download books for offline reading</li>
+                    <li>Priority customer support</li>
+                </ul>
+            </div>
+
+            <section class="section">
+                <h2>Payment Method</h2>
+                <div class="payment-methods">
+                    <label for="visa" class="payment-method">
+                        <input type="radio" id="visa" name="payment" value="visa" checked>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa">
+                    </label>
+                    <label for="fawry" class="payment-method">
+                        <input type="radio" id="fawry" name="payment" value="fawry">
+                        <img src="https://www.fawry.com/wp-content/uploads/2022/09/fawry-logo-en.svg" alt="Fawry" style="filter: invert(1) brightness(2);">
+                    </label>
+                    <label for="paypal" class="payment-method">
+                        <input type="radio" id="paypal" name="payment" value="paypal">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal">
+                    </label>
+                </div>
+            </section>
+
+            <button type="submit" class="btn-primary">Proceed to Payment ($49.99)</button>
+        </form>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>CloudBooks</h3>
+                <p>Your library, our library.</p>
+            </div>
+            <div class="footer-section links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Sign Up</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h4>Contact Us</h4>
+                <p>Email: w7dee1281@gmail.com</p>
+                <p>Phone: +201007749257</p>
+                <p>Address: Luxor, Faculty of Computers and Information</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 All Rights Reserved - CloudBooks</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
